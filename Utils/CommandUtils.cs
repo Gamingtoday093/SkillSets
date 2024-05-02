@@ -1,11 +1,12 @@
 using Rocket.API;
 using Rocket.Unturned.Chat;
+using UnityEngine;
 
 namespace SkillSets.Utils
 {
     public static class CommandUtils
     {
-		public static UnityEngine.Color ErrorColor = new UnityEngine.Color(0xC0, 0x2C, 0x36);
+		public static Color ErrorColor = new Color(0xC0, 0x2C, 0x36);
 
 
 		public static void InvalidUsage(IRocketPlayer caller)

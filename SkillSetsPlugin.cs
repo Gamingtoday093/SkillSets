@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using Rocket.API;
 using Rocket.API.Collections;
-using Rocket.Core.Logging;
 using Rocket.Core.Plugins;
 using Rocket.Unturned;
 using Rocket.Unturned.Events;
 using Rocket.Unturned.Player;
 using SkillSets.Storage;
 using SkillSets.Utils;
+using UnityEngine;
+using Logger = Rocket.Core.Logging.Logger;
 
 namespace SkillSets
 {
@@ -164,7 +165,7 @@ namespace SkillSets
 		#endregion
 
 		#region Events
-		public void UnturnedPlayerEvents_OnPlayerRevive(UnturnedPlayer player, UnityEngine.Vector3 position, byte angle)
+		public void UnturnedPlayerEvents_OnPlayerRevive(UnturnedPlayer player, Vector3 position, byte angle)
 		{
 			ApplySkillSetToPlayer(player);
 		}
